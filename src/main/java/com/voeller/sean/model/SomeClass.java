@@ -1,8 +1,10 @@
 package com.voeller.sean.model;
 
+import com.voeller.sean.model.validation.Both;
 import com.voeller.sean.model.validation.OneOrTheOther;
 
 @OneOrTheOther
+@Both(profiles={"bothProfile"})
 public class SomeClass {
 	private String tweedledee;
 	private String tweedledum;
